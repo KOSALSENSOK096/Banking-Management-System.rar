@@ -2,6 +2,8 @@
 
 <div align="center">
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=3DABF5&center=true&vCenter=true&random=false&width=600&lines=Welcome+to+Banking+System;Modern+%26+Secure;Easy+to+Use)](https://git.io/typing-svg)
+
 ![Banking System](https://img.shields.io/badge/Banking-System-blue?style=for-the-badge&logo=bank&logoColor=white)
 [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
@@ -10,15 +12,40 @@
 
 ---
 
-🌟 A modern, secure, and user-friendly banking management system built with cutting-edge web technologies.
+### 🌟 Modern Banking Made Simple
 
-[Features](#features) • [Demo](#demo) • [Installation](#installation) • [Documentation](#documentation) • [Support](#support)
+A cutting-edge banking management system that combines security, efficiency, and user experience.
+
+[📚 Features](#features) • [🎮 Demo](#demo) • [⚙️ Installation](#installation) • [📖 Documentation](#documentation) • [💡 Support](#support)
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 </div>
 
-## ✨ Features
+## ✨ Key Features
 
 <div align="center">
+
+```mermaid
+mindmap
+  root((Banking System))
+    Security
+      End-to-end encryption
+      Multi-factor auth
+      Secure sessions
+    Transactions
+      Real-time processing
+      Instant transfers
+      Auto-verification
+    Interface
+      Modern UI
+      Dark theme
+      Responsive
+    Analytics
+      Transaction history
+      Smart insights
+      Real-time stats
+```
 
 | 🔐 Authentication | 💼 Banking | 🎨 User Interface | 🛡️ Security |
 |------------------|------------|------------------|-------------|
@@ -29,125 +56,220 @@
 
 </div>
 
-## 🎥 Demo
+## 🎥 Live Demo & Screenshots
 
 <div align="center">
 
-### 💫 Modern Login Interface
-![Login](https://via.placeholder.com/600x300?text=Modern+Login+Interface)
-
-### 📊 Interactive Dashboard
-![Dashboard](https://via.placeholder.com/600x300?text=Interactive+Dashboard)
+<table>
+<tr>
+<td width="50%">
+<p align="center">
+<img src="https://via.placeholder.com/400x300?text=Login+Screen" alt="Login Screen"/>
+<br/>
+<em>Secure Login Interface</em>
+</p>
+</td>
+<td width="50%">
+<p align="center">
+<img src="https://via.placeholder.com/400x300?text=Dashboard" alt="Dashboard"/>
+<br/>
+<em>Interactive Dashboard</em>
+</p>
+</td>
+</tr>
+</table>
 
 </div>
 
-## 🚀 Quick Start
+## 🚀 Quick Start Guide
 
-### Prerequisites
+<div align="center">
 
-```bash
-Python 3.8+
-Node.js 14+
-```
+<table>
+<tr>
+<td align="center">
+<img src="https://img.shields.io/badge/Step%201-Clone-orange?style=for-the-badge&logo=git&logoColor=white"/>
+<br/>
 
-### Installation
-
-1️⃣ Clone the repository
 ```bash
 git clone https://github.com/KOSALSENSOK096/Banking-Management-System.rar.git
-cd Banking-Management-System
 ```
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://img.shields.io/badge/Step%202-Install-blue?style=for-the-badge&logo=npm&logoColor=white"/>
+<br/>
 
-2️⃣ Install dependencies
 ```bash
-# Backend dependencies
 pip install -r requirements.txt
-
-# Frontend dependencies (if applicable)
 npm install
 ```
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://img.shields.io/badge/Step%203-Configure-green?style=for-the-badge&logo=dotenv&logoColor=white"/>
+<br/>
 
-3️⃣ Environment Setup
 ```bash
-# Create .env file
 cp .env.example .env
-
-# Update with your configurations
-nano .env
+# Update environment variables
 ```
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://img.shields.io/badge/Step%204-Run-purple?style=for-the-badge&logo=python&logoColor=white"/>
+<br/>
 
-4️⃣ Run the application
 ```bash
 python run.py
 ```
+</td>
+</tr>
+</table>
+
+</div>
 
 ## 🛠️ Technology Stack
 
 <div align="center">
 
-| Frontend | Backend | Database | Tools |
-|----------|---------|----------|-------|
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) | | ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white) | | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) |
-| ![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) | | | |
+<table>
+<tr>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/html-5.png" alt="html-5"/>
+<br/>HTML5
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/python.png" alt="python"/>
+<br/>Python
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/mysql-logo.png" alt="mysql"/>
+<br/>MySQL
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/git.png" alt="git"/>
+<br/>Git
+</td>
+</tr>
+<tr>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/css3.png" alt="css3"/>
+<br/>CSS3
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/nodejs.png" alt="nodejs"/>
+<br/>Node.js
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/redis.png" alt="redis"/>
+<br/>Redis
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/docker.png" alt="docker"/>
+<br/>Docker
+</td>
+</tr>
+</table>
 
 </div>
 
-## 📱 Features Overview
-
-### 🔐 Secure Authentication
-- Multi-factor authentication support
-- Session management
-- Password strength enforcement
-- Secure token handling
-
-### 💼 Banking Operations
-- Real-time balance updates
-- Transaction history with filtering
-- Scheduled payments
-- Fund transfers with validation
-
-### 🎨 Modern UI/UX
-- Responsive design for all devices
-- Dark/Light theme support
-- Interactive animations
-- Real-time notifications
-
-### 🛡️ Security Features
-- Data encryption
-- XSS protection
-- CSRF protection
-- Rate limiting
-
-## 📚 Documentation
-
-Detailed documentation is available in the [Wiki](https://github.com/KOSALSENSOK096/Banking-Management-System.rar/wiki).
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+## 🔒 Security Features
 
 <div align="center">
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
+<table>
+<tr>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/password.png" alt="password"/>
+<br/>
+<b>Password Security</b>
+<br/>
+<sub>• Argon2 Hashing<br/>• Salt & Pepper<br/>• Password Policy</sub>
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/two-factor-authentication.png" alt="2FA"/>
+<br/>
+<b>2FA Protection</b>
+<br/>
+<sub>• Time-based OTP<br/>• Email Verification<br/>• Backup Codes</sub>
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/encryption.png" alt="encryption"/>
+<br/>
+<b>Data Encryption</b>
+<br/>
+<sub>• AES-256<br/>• SSL/TLS<br/>• End-to-End</sub>
+</td>
+<td align="center" width="25%">
+<img width="64" height="64" src="https://img.icons8.com/color/64/shield.png" alt="shield"/>
+<br/>
+<b>Access Control</b>
+<br/>
+<sub>• Role-based<br/>• IP Whitelisting<br/>• Rate Limiting</sub>
+</td>
+</tr>
+</table>
 
 </div>
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact & Support
+## 📊 Project Statistics
 
 <div align="center">
 
-| Contact Method | Link |
-|---------------|------|
-| Email | [your.email@example.com](mailto:your.email@example.com) |
-| Twitter | [@your_twitter](https://twitter.com/your_twitter) |
-| LinkedIn | [Your Name](https://linkedin.com/in/your-profile) |
-| Issues | [GitHub Issues](https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues) |
+<table>
+<tr>
+<td>
+
+![Repo Stats](https://github-readme-stats.vercel.app/api?username=KOSALSENSOK096&show_icons=true&theme=radical&hide_border=true)
+
+</td>
+<td>
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KOSALSENSOK096&layout=compact&theme=radical&hide_border=true)
+
+</td>
+</tr>
+</table>
+
+[![Activity Graph](https://activity-graph.herokuapp.com/graph?username=KOSALSENSOK096&theme=redical&hide_border=true)](https://github.com/KOSALSENSOK096)
+
+</div>
+
+## 📱 Mobile View
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%">
+<img src="https://via.placeholder.com/200x400?text=Mobile+Login" alt="Mobile Login"/>
+<p align="center">Login Screen</p>
+</td>
+<td width="33%">
+<img src="https://via.placeholder.com/200x400?text=Mobile+Dashboard" alt="Mobile Dashboard"/>
+<p align="center">Dashboard</p>
+</td>
+<td width="33%">
+<img src="https://via.placeholder.com/200x400?text=Mobile+Transfer" alt="Mobile Transfer"/>
+<p align="center">Transfer Screen</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+## 🌐 Connect With Us
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KOSALSENSOK096)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/your-handle)
 
 </div>
 
@@ -155,17 +277,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-### ⭐ Star us on GitHub
+### 💝 Support & Feedback
 
-If you find this project helpful, please consider giving it a star!
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/your-username)
+[![Report Bug](https://img.shields.io/badge/Report_Bug-red?style=for-the-badge&logo=bug&logoColor=white)](https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues)
+[![Request Feature](https://img.shields.io/badge/Request_Feature-green?style=for-the-badge&logo=feature-request&logoColor=white)](https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues)
 
-[![Star](https://img.shields.io/github/stars/KOSALSENSOK096/Banking-Management-System.rar?style=social)](https://github.com/KOSALSENSOK096/Banking-Management-System.rar)
-
-### 📊 Project Stats
-
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 </div>
