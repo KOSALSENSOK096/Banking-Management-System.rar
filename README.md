@@ -416,6 +416,80 @@ erDiagram
 
 </div>
 
+## 🖼️ User Interface Screenshots
+
+<div align="center">
+
+### 🔐 Account Registration Screen
+
+<img src="screenshots/account-registration.png" alt="Account Registration" width="800"/>
+
+```
+Features:
+✓ Personal Information Collection
+✓ Address Details
+✓ Account Type Selection
+✓ Initial Deposit Setup
+✓ Currency Selection
+```
+
+### 💼 Account Management
+
+<table>
+<tr>
+<td width="50%">
+<img src="screenshots/login-screen.png" alt="Login Screen" width="400"/>
+<p align="center"><em>Secure Login Interface</em></p>
+</td>
+<td width="50%">
+<img src="screenshots/dashboard.png" alt="Dashboard" width="400"/>
+<p align="center"><em>User Dashboard</em></p>
+</td>
+</tr>
+</table>
+
+### 🎨 Modern UI Elements
+
+| Feature | Description |
+|---------|-------------|
+| 🌙 Dark Mode | Eye-friendly dark theme with professional color scheme |
+| 📱 Responsive Design | Adapts seamlessly to different screen sizes |
+| 🎯 Intuitive Navigation | Clear and user-friendly interface |
+| 🔔 Real-time Notifications | Instant updates for account activities |
+
+### 💫 Animations & Interactions
+
+<table>
+<tr>
+<td width="33%">
+<img src="screenshots/transfer-animation.gif" alt="Transfer Animation" width="250"/>
+<p align="center"><em>Transfer Process</em></p>
+</td>
+<td width="33%">
+<img src="screenshots/balance-update.gif" alt="Balance Update" width="250"/>
+<p align="center"><em>Balance Updates</em></p>
+</td>
+<td width="33%">
+<img src="screenshots/notification.gif" alt="Notifications" width="250"/>
+<p align="center"><em>Alert System</em></p>
+</td>
+</tr>
+</table>
+
+### 📊 Transaction History
+
+<img src="screenshots/transaction-history.png" alt="Transaction History" width="800"/>
+
+```
+Features:
+✓ Detailed Transaction Records
+✓ Filter and Search
+✓ Export Functionality
+✓ Visual Transaction Analytics
+```
+
+</div>
+
 ## 🚀 Quick Start Guide
 
 <div align="center">
