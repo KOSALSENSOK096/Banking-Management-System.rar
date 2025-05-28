@@ -3,19 +3,25 @@
 <div align="center">
 
 ```
- ██████╗  █████╗ ███╗   ██╗██╗  ██╗██╗███╗   ██╗ ██████╗
- ██╔══██╗██╔══██╗████╗  ██║██║ ██╔╝██║████╗  ██║██╔════╝
- ██████╔╝███████║██╔██╗ ██║█████╔╝ ██║██╔██╗ ██║██║  ███╗
- ██╔══██╗██╔══██║██║╚██╗██║██╔═██╗ ██║██║╚██╗██║██║   ██║
- ██████╔╝██║  ██║██║ ╚████║██║  ██╗██║██║ ╚████║╚██████╔╝
- ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝
-     🏦 Modern Banking System by KOSALOK 🌟
+ ██╗  ██╗ ██████╗ ███████╗ █████╗ ██╗
+ ██║ ██╔╝██╔═══██╗██╔════╝██╔══██╗██║
+ █████╔╝ ██║   ██║███████╗███████║██║
+ ██╔═██╗ ██║   ██║╚════██║██╔══██║██║
+ ██║  ██╗╚██████╔╝███████║██║  ██║███████╗
+ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝
+ ███████╗███████╗███╗   ██╗███████╗ ██████╗ ██╗  ██╗
+ ██╔════╝██╔════╝████╗  ██║██╔════╝██╔═══██╗██║ ██╔╝
+ ███████╗█████╗  ██╔██╗ ██║███████╗██║   ██║█████╔╝
+ ╚════██║██╔══╝  ██║╚██╗██║╚════██║██║   ██║██╔═██╗
+ ███████║███████╗██║ ╚████║███████║╚██████╔╝██║  ██╗
+ ╚══════╝╚══════╝╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝
+        🏦 Modern Banking System 🌟
 ```
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=3DABF5&center=true&vCenter=true&random=false&width=600&lines=Welcome+to+Banking+System;Modern+%26+Secure;Easy+to+Use)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=3DABF5&center=true&vCenter=true&random=false&width=600&lines=Welcome+to+Banking+System;Developed+by+Kosal+Sensok;Modern+%26+Secure;Easy+to+Use)](https://git.io/typing-svg)
 
 <div align="center">
-<img src="https://img.shields.io/badge/Made%20by-KOSALOK-blue?style=for-the-badge&logo=github&logoColor=white" alt="Made by KOSALOK"/>
+<img src="https://img.shields.io/badge/Created%20by-Kosal%20Sensok-blue?style=for-the-badge&logo=github&logoColor=white" alt="Created by Kosal Sensok"/>
 </div>
 
 ![Banking System](https://img.shields.io/badge/Banking-System-blue?style=for-the-badge&logo=bank&logoColor=white)
@@ -33,7 +39,7 @@
 ### 🌟 Modern Banking Made Simple
 
 A cutting-edge banking management system that combines security, efficiency, and user experience.
-Developed with passion by KOSALOK.
+Crafted with excellence by Kosal Sensok.
 
 [📚 Features](#features) • [🎮 Demo](#demo) • [⚙️ Installation](#installation) • [📖 Documentation](#documentation) • [💡 Support](#support)
 
@@ -281,57 +287,72 @@ python run.py
 
 </div>
 
-## 👨‍💻 Developer
+## 👨‍💻 Developer Profile
 
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/KOSALSENSOK096" width="150" height="150" style="border-radius: 50%;" alt="KOSALOK"/>
+<table>
+<tr>
+<td align="center">
+<img src="https://avatars.githubusercontent.com/u/KOSALSENSOK096" width="150" height="150" style="border-radius: 50%;" alt="Kosal Sensok"/>
+<br/>
+<sub><b>Kosal Sensok</b></sub>
+<br/>
+<sub>Full Stack Developer</sub>
+</td>
+</tr>
+</table>
 
-### KOSALOK
-
-<p align="center">
-Full Stack Developer | Banking System Specialist
-</p>
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)](https://your-portfolio-url)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KOSALSENSOK096)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-profile)
+### About Me
 
 ```javascript
 const developer = {
-    name: "KOSALOK",
+    name: "Kosal Sensok",
     role: "Full Stack Developer",
+    location: "Cambodia",
     languages: ["Python", "JavaScript", "HTML", "CSS"],
     specialties: ["Banking Systems", "Web Development", "Security"],
-    location: "Cambodia"
+    education: "Computer Science",
+    interests: ["FinTech", "Web3", "Cybersecurity"]
 };
 ```
 
-</div>
-
-## 🌐 Connect With Us
+### Skills & Technologies
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kosalok@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kosalok)
+![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Advanced-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Web Development](https://img.shields.io/badge/Web-Development-FF6C37?style=for-the-badge&logo=web&logoColor=white)
+![Database](https://img.shields.io/badge/Database-Expert-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+</div>
+
+### Connect With Me
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)](https://kosalsensok.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KOSALSENSOK096)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/kosalok)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kosalsensok)
 
 </div>
 
----
+## 🌐 Connect & Support
 
 <div align="center">
 
-### 💝 Support & Feedback
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kosalsensok@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kosalsensok)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KOSALSENSOK096)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/kosalsensok)
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/kosalok)
+### Support My Work
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/kosalsensok)
 [![Report Bug](https://img.shields.io/badge/Report_Bug-red?style=for-the-badge&logo=bug&logoColor=white)](https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues)
 [![Request Feature](https://img.shields.io/badge/Request_Feature-green?style=for-the-badge&logo=feature-request&logoColor=white)](https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<sub>© 2024 KOSALOK. All rights reserved.</sub>
+<sub>© 2024 Kosal Sensok. All rights reserved.</sub>
 
 </div>
