@@ -3,6 +3,8 @@
 ![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)
 ![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 A modern, feature-rich banking management system built with Python and CustomTkinter, featuring an elegant dark theme UI. This application provides a comprehensive solution for managing banking operations with a user-friendly interface.
 
@@ -148,5 +150,52 @@ For support, please:
 ---
 
 <div align="center">
-  Made with ❤️ by [Your Name/Organization]
+
+### Connect with Us 🌐
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KOSALSENSOK096)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com)
+
+### Tech Stack 💻
+
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
+### Development Tools 🛠️
+
+![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![PyCharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
+### Stats 📊
+
+![Stars](https://img.shields.io/github/stars/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
+![License](https://img.shields.io/github/license/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
+
+### Support the Project ⭐
+
+If you find this project helpful, please consider giving it a star!
+
+[![Star History Chart](https://api.star-history.com/svg?repos=KOSALSENSOK096/Banking-Management-System.rar&type=Date)](https://star-history.com/#KOSALSENSOK096/Banking-Management-System.rar&Date)
+
+<br>
+
+### Made with ❤️ and Python
+
+<br>
+
+<a href="https://www.buymeacoffee.com/your-username" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50px">
+</a>
+
+<br>
+<br>
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=3DABF5&center=true&vCenter=true&width=435&lines=Thanks+for+visiting!;Star+this+repository;Create+amazing+projects!)](https://git.io/typing-svg)
+
 </div>
