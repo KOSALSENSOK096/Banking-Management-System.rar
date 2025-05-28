@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import json
 import os
-from typing import Optional
+from typing import Optional, List
 import bcrypt
 from datetime import datetime, timedelta
 import jwt
@@ -35,6 +35,16 @@ class Token(BaseModel):
     access_token: str
     token_type: str
 
+class TransferRequest(BaseModel):
+    recipient: str
+    amount: float
+
+class Transaction(BaseModel):
+    type: str
+    amount: float
+    date: datetime
+    description: str
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 # Database operations
@@ -43,7 +53,7 @@ def load_db():
         with open('bank_data.json', 'r') as f:
             return json.load(f)
     except:
-        return {"users": {}}
+        return {"users": {}, "transactions": {}}
 
 def save_db(data):
     with open('bank_data.json', 'w') as f:
@@ -56,6 +66,18 @@ def create_access_token(data: dict):
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
+
+def get_current_user(token: str = Depends(oauth2_scheme)):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username = payload.get("sub")
+        if username is None:
+            raise HTTPException(status_code=401, detail="Invalid token")
+        return username
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(status_code=401, detail="Token has expired")
+    except jwt.JWTError:
+        raise HTTPException(status_code=401, detail="Could not validate token")
 
 @app.post("/token")
 async def login(form_data: OAuth2PasswordRequestForm = Depends()):
@@ -82,15 +104,66 @@ async def register(user: User):
         "full_name": user.full_name,
         "balance": user.balance
     }
+    if "transactions" not in db:
+        db["transactions"] = {}
+    db["transactions"][user.username] = []
     save_db(db)
     return {"message": "User registered successfully"}
 
 @app.get("/balance")
-async def get_balance(token: str = Depends(oauth2_scheme)):
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username = payload.get("sub")
-        db = load_db()
-        return {"balance": db["users"][username]["balance"]}
-    except:
-        raise HTTPException(status_code=401, detail="Invalid token")
+async def get_balance(current_user: str = Depends(get_current_user)):
+    db = load_db()
+    return {"balance": db["users"][current_user]["balance"]}
+
+@app.get("/transactions")
+async def get_transactions(current_user: str = Depends(get_current_user)):
+    db = load_db()
+    transactions = db.get("transactions", {}).get(current_user, [])
+    return {"transactions": transactions}
+
+@app.post("/transfer")
+async def transfer_money(transfer: TransferRequest, current_user: str = Depends(get_current_user)):
+    db = load_db()
+
+    if transfer.amount <= 0:
+        raise HTTPException(status_code=400, detail="Amount must be positive")
+
+    if current_user == transfer.recipient:
+        raise HTTPException(status_code=400, detail="Cannot transfer to yourself")
+
+    if transfer.recipient not in db["users"]:
+        raise HTTPException(status_code=404, detail="Recipient not found")
+
+    sender_balance = db["users"][current_user]["balance"]
+    if sender_balance < transfer.amount:
+        raise HTTPException(status_code=400, detail="Insufficient funds")
+
+    # Process transfer
+    db["users"][current_user]["balance"] -= transfer.amount
+    db["users"][transfer.recipient]["balance"] += transfer.amount
+
+    # Record transactions
+    transaction_time = datetime.utcnow()
+
+    # Sender's transaction
+    if current_user not in db["transactions"]:
+        db["transactions"][current_user] = []
+    db["transactions"][current_user].append({
+        "type": "Transfer Out",
+        "amount": -transfer.amount,
+        "date": transaction_time.isoformat(),
+        "description": f"Transfer to {transfer.recipient}"
+    })
+
+    # Recipient's transaction
+    if transfer.recipient not in db["transactions"]:
+        db["transactions"][transfer.recipient] = []
+    db["transactions"][transfer.recipient].append({
+        "type": "Transfer In",
+        "amount": transfer.amount,
+        "date": transaction_time.isoformat(),
+        "description": f"Transfer from {current_user}"
+    })
+
+    save_db(db)
+    return {"message": "Transfer successful"}
