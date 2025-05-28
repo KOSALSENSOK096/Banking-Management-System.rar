@@ -29,6 +29,9 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.68.1-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![React](https://img.shields.io/badge/React-18.0+-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.5+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com)
 
 <div align="center">
 <img src="https://komarev.com/ghpvc/?username=KOSALSENSOK096&style=for-the-badge&color=blue" alt="Profile Views"/>
@@ -36,16 +39,18 @@
 
 ---
 
-### 🌟 Modern Banking Made Simple
+<div align="center">
 
-A cutting-edge banking management system that combines security, efficiency, and user experience.
-Crafted with excellence by Kosal Sensok.
+### 🌟 Next-Generation Banking Platform
+
+A state-of-the-art banking management system combining enterprise-grade security,
+cloud-native architecture, and exceptional user experience.
 
 [📚 Features](#features) • [🎮 Demo](#demo) • [⚙️ Installation](#installation) • [📖 Documentation](#documentation) • [💡 Support](#support)
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
 </div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 📊 Project Status Dashboard
 
@@ -693,6 +698,308 @@ docker-compose logs -f
 - ☁️ AWS
 - 🌩️ Google Cloud
 - 💻 Self-hosted
-- 🐳 Docker
+- �� Docker
+
+</div>
+
+## 🚀 Deployment Guide
+
+<div align="center">
+
+### Docker Deployment
+
+```dockerfile
+# Dockerfile
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY . .
+
+# Expose port
+EXPOSE 8000
+
+# Run application
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+```yaml
+# docker-compose.yml
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=mysql://user:password@db:3306/banking
+      - REDIS_URL=redis://cache:6379/0
+    depends_on:
+      - db
+      - cache
+
+  db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_DATABASE=banking
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=rootpassword
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  cache:
+    image: redis:6.2-alpine
+    volumes:
+      - redis_data:/data
+
+volumes:
+  mysql_data:
+  redis_data:
+```
+
+### 🔒 Security Features
+
+1. **Authentication & Authorization**
+   - JWT-based authentication
+   - Role-based access control
+   - Multi-factor authentication
+   - Session management
+
+2. **Data Protection**
+   - End-to-end encryption
+   - Data masking
+   - Secure password hashing
+   - XSS protection
+
+3. **Infrastructure Security**
+   - Rate limiting
+   - DDoS protection
+   - WAF integration
+   - Regular security audits
+
+4. **Compliance**
+   - GDPR compliance
+   - PCI DSS standards
+   - Data privacy
+   - Audit logging
+
+### 📈 Performance Optimization
+
+```mermaid
+graph LR
+    A[Request] --> B[Load Balancer]
+    B --> C[API Gateway]
+    C --> D[Cache Layer]
+    D --> E[Application]
+    E --> F[Database]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#dfd,stroke:#333,stroke-width:2px
+    style D fill:#fdd,stroke:#333,stroke-width:2px
+    style E fill:#ddf,stroke:#333,stroke-width:2px
+    style F fill:#ffd,stroke:#333,stroke-width:2px
+```
+
+### 📊 Monitoring & Analytics
+
+```typescript
+// monitoring.config.ts
+export const monitoringConfig = {
+  metrics: {
+    endpoint: '/metrics',
+    collectors: ['prometheus', 'datadog'],
+    intervals: {
+      system: 60,
+      application: 30,
+      custom: 15
+    }
+  },
+  alerts: {
+    channels: ['email', 'slack', 'pagerduty'],
+    thresholds: {
+      cpu: 80,
+      memory: 85,
+      errorRate: 5
+    }
+  },
+  logging: {
+    level: 'info',
+    format: 'json',
+    storage: {
+      type: 'elasticsearch',
+      retention: '30d'
+    }
+  }
+};
+```
+
+</div>
+
+## 💻 Technical Architecture
+
+<div align="center">
+
+### System Overview
+
+```mermaid
+graph TB
+    subgraph Client Layer
+        Web[Web App]
+        Mobile[Mobile App]
+        API_Client[API Client]
+    end
+
+    subgraph API Gateway
+        LB[Load Balancer]
+        Auth[Auth Service]
+        Rate[Rate Limiter]
+    end
+
+    subgraph Application Layer
+        UserService[User Service]
+        AccountService[Account Service]
+        TransactionService[Transaction Service]
+        NotificationService[Notification Service]
+    end
+
+    subgraph Data Layer
+        MySQL[(MySQL)]
+        Redis[(Redis Cache)]
+        MongoDB[(MongoDB)]
+    end
+
+    Client Layer --> API Gateway
+    API Gateway --> Application Layer
+    Application Layer --> Data Layer
+```
+
+### Code Examples
+
+#### 🔐 Secure Authentication
+
+```typescript
+// auth.service.ts
+export class AuthService {
+  async login(credentials: LoginDto): Promise<AuthResponse> {
+    const user = await this.validateUser(credentials);
+    const tokens = await this.generateTokens(user);
+
+    return {
+      access_token: tokens.accessToken,
+      refresh_token: tokens.refreshToken,
+      user: this.sanitizeUser(user)
+    };
+  }
+
+  private async generateTokens(user: User): Promise<TokenPair> {
+    const payload = { sub: user.id, email: user.email };
+
+    return {
+      accessToken: this.jwtService.sign(payload),
+      refreshToken: this.jwtService.sign(payload, { expiresIn: '7d' })
+    };
+  }
+}
+```
+
+#### 💰 Transaction Processing
+
+```python
+# transaction.service.py
+class TransactionService:
+    async def process_transfer(self, transfer: TransferDTO) -> Transaction:
+        async with self.db.transaction():
+            # Verify sufficient funds
+            source = await self.account_repo.get(transfer.source_id)
+            if source.balance < transfer.amount:
+                raise InsufficientFundsError()
+
+            # Execute transfer
+            await self.account_repo.update_balance(
+                account_id=transfer.source_id,
+                amount=-transfer.amount
+            )
+            await self.account_repo.update_balance(
+                account_id=transfer.target_id,
+                amount=transfer.amount
+            )
+
+            # Record transaction
+            return await self.transaction_repo.create(
+                source_id=transfer.source_id,
+                target_id=transfer.target_id,
+                amount=transfer.amount,
+                type=TransactionType.TRANSFER
+            )
+```
+
+### 📱 Modern UI Components
+
+```tsx
+// DashboardWidget.tsx
+export const DashboardWidget: React.FC<Props> = ({ title, data }) => {
+  return (
+    <div className="p-4 bg-white rounded-lg shadow-lg">
+      <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+      <div className="mt-4">
+        <ResponsiveContainer width="100%" height={300}>
+          <AreaChart data={data}>
+            <defs>
+              <linearGradient id="colorBalance" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#3B82F6" stopOpacity={0.8}/>
+                <stop offset="95%" stopColor="#3B82F6" stopOpacity={0}/>
+              </linearGradient>
+            </defs>
+            <XAxis dataKey="date" />
+            <YAxis />
+            <Tooltip />
+            <Area
+              type="monotone"
+              dataKey="balance"
+              stroke="#3B82F6"
+              fillOpacity={1}
+              fill="url(#colorBalance)"
+            />
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+};
+```
+
+### 🔄 API Endpoints
+
+```typescript
+// routes.ts
+export const routes = {
+  auth: {
+    login: '/api/v1/auth/login',
+    register: '/api/v1/auth/register',
+    refresh: '/api/v1/auth/refresh',
+    logout: '/api/v1/auth/logout',
+  },
+  accounts: {
+    list: '/api/v1/accounts',
+    create: '/api/v1/accounts',
+    details: (id: string) => `/api/v1/accounts/${id}`,
+    transactions: (id: string) => `/api/v1/accounts/${id}/transactions`,
+  },
+  transactions: {
+    create: '/api/v1/transactions',
+    details: (id: string) => `/api/v1/transactions/${id}`,
+    history: '/api/v1/transactions/history',
+  },
+};
+```
 
 </div>
