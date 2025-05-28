@@ -47,37 +47,142 @@ Crafted with excellence by Kosal Sensok.
 
 </div>
 
-## ✨ Key Features
+## 📊 Project Status Dashboard
+
+<div align="center">
+
+| Metric | Status |
+|--------|--------|
+| Build Status | ![Build Status](https://img.shields.io/github/workflow/status/KOSALSENSOK096/Banking-Management-System.rar/CI?style=for-the-badge) |
+| Code Coverage | ![Coverage](https://img.shields.io/codecov/c/github/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge) |
+| Last Commit | ![Last Commit](https://img.shields.io/github/last-commit/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge) |
+| Issues | ![Issues](https://img.shields.io/github/issues/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge) |
+| Pull Requests | ![Pull Requests](https://img.shields.io/github/issues-pr/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge) |
+
+</div>
+
+## 🎯 Core Features
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<img width="64" height="64" src="https://img.icons8.com/color/64/bank-building.png" alt="Accounts"/>
+<br/>
+<b>Account Management</b>
+<br/>
+<sub>• Create Accounts<br/>• View Balance<br/>• Account History</sub>
+</td>
+<td align="center">
+<img width="64" height="64" src="https://img.icons8.com/color/64/transaction.png" alt="Transactions"/>
+<br/>
+<b>Smart Transactions</b>
+<br/>
+<sub>• Instant Transfer<br/>• Scheduled Payments<br/>• Transaction Logs</sub>
+</td>
+<td align="center">
+<img width="64" height="64" src="https://img.icons8.com/color/64/security-checked.png" alt="Security"/>
+<br/>
+<b>Enhanced Security</b>
+<br/>
+<sub>• 2FA Auth<br/>• Encryption<br/>• Fraud Detection</sub>
+</td>
+<td align="center">
+<img width="64" height="64" src="https://img.icons8.com/color/64/dashboard-layout.png" alt="Dashboard"/>
+<br/>
+<b>Smart Dashboard</b>
+<br/>
+<sub>• Analytics<br/>• Reports<br/>• Insights</sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<img width="64" height="64" src="https://img.icons8.com/color/64/python.png" alt="Backend"/>
+<br/>
+<b>Backend</b>
+<br/>
+<sub>
+• Python 3.8+<br/>
+• FastAPI<br/>
+• SQLAlchemy<br/>
+• Redis
+</sub>
+</td>
+<td align="center">
+<img width="64" height="64" src="https://img.icons8.com/color/64/react-native.png" alt="Frontend"/>
+<br/>
+<b>Frontend</b>
+<br/>
+<sub>
+• React.js<br/>
+• Tailwind CSS<br/>
+• TypeScript<br/>
+• Redux
+</sub>
+</td>
+<td align="center">
+<img width="64" height="64" src="https://img.icons8.com/color/64/mysql-logo.png" alt="Database"/>
+<br/>
+<b>Database</b>
+<br/>
+<sub>
+• MySQL 8.0+<br/>
+• Redis Cache<br/>
+• Migrations<br/>
+• Backups
+</sub>
+</td>
+<td align="center">
+<img width="64" height="64" src="https://img.icons8.com/color/64/docker.png" alt="DevOps"/>
+<br/>
+<b>DevOps</b>
+<br/>
+<sub>
+• Docker<br/>
+• GitHub Actions<br/>
+• AWS<br/>
+• Monitoring
+</sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+## 🌟 Feature Highlights
 
 <div align="center">
 
 ```mermaid
-mindmap
-  root((Banking System))
-    Security
-      End-to-end encryption
-      Multi-factor auth
-      Secure sessions
-    Transactions
-      Real-time processing
-      Instant transfers
-      Auto-verification
-    Interface
-      Modern UI
-      Dark theme
-      Responsive
-    Analytics
-      Transaction history
-      Smart insights
-      Real-time stats
+graph LR
+    A[User] --> B[Authentication]
+    B --> C[Dashboard]
+    C --> D[Accounts]
+    C --> E[Transactions]
+    C --> F[Reports]
+    D --> G[Balance]
+    E --> H[Transfer]
+    F --> I[Analytics]
 ```
 
-| 🔐 Authentication | 💼 Banking | 🎨 User Interface | 🛡️ Security |
-|------------------|------------|------------------|-------------|
-| User Registration | Account Dashboard | Responsive Design | Password Hashing |
-| Secure Login | Transaction History | Modern UI | JWT Authentication |
-| Remember Me | Fund Transfers | Animations | Session Management |
-| Password Protection | Balance Management | Notifications | XSS Protection |
+### Key Capabilities
+
+| 🏦 Banking | 📊 Analytics | 🔒 Security | 📱 Interface |
+|------------|-------------|-------------|--------------|
+| Multi-Currency | Real-time Stats | Biometric Auth | Responsive UI |
+| Auto-Payments | Smart Insights | Data Encryption | Dark Mode |
+| Bill Splitting | PDF Reports | Fraud Detection | Notifications |
+| Card Management | Tax Documents | Session Control | Accessibility |
 
 </div>
 
@@ -154,206 +259,6 @@ python run.py
 </td>
 </tr>
 </table>
-
-</div>
-
-## 🛠️ Technology Stack
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/html-5.png" alt="html-5"/>
-<br/>HTML5
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/python.png" alt="python"/>
-<br/>Python
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/mysql-logo.png" alt="mysql"/>
-<br/>MySQL
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/git.png" alt="git"/>
-<br/>Git
-</td>
-</tr>
-<tr>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/css3.png" alt="css3"/>
-<br/>CSS3
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/nodejs.png" alt="nodejs"/>
-<br/>Node.js
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/redis.png" alt="redis"/>
-<br/>Redis
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/docker.png" alt="docker"/>
-<br/>Docker
-</td>
-</tr>
-</table>
-
-</div>
-
-## 🔒 Security Features
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/password.png" alt="password"/>
-<br/>
-<b>Password Security</b>
-<br/>
-<sub>• Argon2 Hashing<br/>• Salt & Pepper<br/>• Password Policy</sub>
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/two-factor-authentication.png" alt="2FA"/>
-<br/>
-<b>2FA Protection</b>
-<br/>
-<sub>• Time-based OTP<br/>• Email Verification<br/>• Backup Codes</sub>
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/encryption.png" alt="encryption"/>
-<br/>
-<b>Data Encryption</b>
-<br/>
-<sub>• AES-256<br/>• SSL/TLS<br/>• End-to-End</sub>
-</td>
-<td align="center" width="25%">
-<img width="64" height="64" src="https://img.icons8.com/color/64/shield.png" alt="shield"/>
-<br/>
-<b>Access Control</b>
-<br/>
-<sub>• Role-based<br/>• IP Whitelisting<br/>• Rate Limiting</sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-## 📊 Project Statistics
-
-<div align="center">
-
-<table>
-<tr>
-<td>
-
-![Repo Stats](https://github-readme-stats.vercel.app/api?username=KOSALSENSOK096&show_icons=true&theme=radical&hide_border=true)
-
-</td>
-<td>
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KOSALSENSOK096&layout=compact&theme=radical&hide_border=true)
-
-</td>
-</tr>
-</table>
-
-[![Activity Graph](https://activity-graph.herokuapp.com/graph?username=KOSALSENSOK096&theme=redical&hide_border=true)](https://github.com/KOSALSENSOK096)
-
-</div>
-
-## 📱 Mobile View
-
-<div align="center">
-
-<table>
-<tr>
-<td width="33%">
-<img src="https://via.placeholder.com/200x400?text=Mobile+Login" alt="Mobile Login"/>
-<p align="center">Login Screen</p>
-</td>
-<td width="33%">
-<img src="https://via.placeholder.com/200x400?text=Mobile+Dashboard" alt="Mobile Dashboard"/>
-<p align="center">Dashboard</p>
-</td>
-<td width="33%">
-<img src="https://via.placeholder.com/200x400?text=Mobile+Transfer" alt="Mobile Transfer"/>
-<p align="center">Transfer Screen</p>
-</td>
-</tr>
-</table>
-
-</div>
-
-## 👨‍💻 Developer Profile
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center">
-<img src="https://avatars.githubusercontent.com/u/KOSALSENSOK096" width="150" height="150" style="border-radius: 50%;" alt="Kosal Sensok"/>
-<br/>
-<sub><b>Kosal Sensok</b></sub>
-<br/>
-<sub>Full Stack Developer</sub>
-</td>
-</tr>
-</table>
-
-### About Me
-
-```javascript
-const developer = {
-    name: "Kosal Sensok",
-    role: "Full Stack Developer",
-    location: "Cambodia",
-    languages: ["Python", "JavaScript", "HTML", "CSS"],
-    specialties: ["Banking Systems", "Web Development", "Security"],
-    education: "Computer Science",
-    interests: ["FinTech", "Web3", "Cybersecurity"]
-};
-```
-
-### Skills & Technologies
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Advanced-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Web Development](https://img.shields.io/badge/Web-Development-FF6C37?style=for-the-badge&logo=web&logoColor=white)
-![Database](https://img.shields.io/badge/Database-Expert-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-</div>
-
-### Connect With Me
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)](https://kosalsensok.dev)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KOSALSENSOK096)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kosalsensok)
-
-</div>
-
-## 🌐 Connect & Support
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kosalsensok@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kosalsensok)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KOSALSENSOK096)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/kosalsensok)
-
-### Support My Work
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/kosalsensok)
-[![Report Bug](https://img.shields.io/badge/Report_Bug-red?style=for-the-badge&logo=bug&logoColor=white)](https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues)
-[![Request Feature](https://img.shields.io/badge/Request_Feature-green?style=for-the-badge&logo=feature-request&logoColor=white)](https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues)
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<sub>© 2024 Kosal Sensok. All rights reserved.</sub>
 
 </div>
 
