@@ -356,3 +356,159 @@ const developer = {
 <sub>© 2024 Kosal Sensok. All rights reserved.</sub>
 
 </div>
+
+## 🛠️ Development Setup
+
+<div align="center">
+
+### Prerequisites
+
+```bash
+# Required software
+Python 3.8+
+Node.js 14+
+MySQL 8.0+
+Redis 6+
+```
+
+### Environment Setup
+
+```bash
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+.\venv\Scripts\activate   # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+npm install
+
+# Configure environment
+cp .env.example .env
+# Edit .env with your configurations
+```
+
+### Database Setup
+
+```bash
+# Create database
+mysql -u root -p
+CREATE DATABASE banking_system;
+
+# Run migrations
+python manage.py migrate
+```
+
+### Running the Application
+
+```bash
+# Start backend server
+python manage.py runserver
+
+# Start frontend development server
+npm run dev
+```
+
+</div>
+
+## 🤝 Contributing
+
+<div align="center">
+
+We welcome contributions! Here's how you can help:
+
+1. 🍴 Fork the repository
+2. 🌿 Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. 💾 Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. 📤 Push to the branch (`git push origin feature/AmazingFeature`)
+5. 🔄 Open a Pull Request
+
+### Contribution Guidelines
+
+- Write clean, maintainable code
+- Follow the existing code style
+- Add unit tests for new features
+- Update documentation as needed
+- Follow the [Code of Conduct](CODE_OF_CONDUCT.md)
+
+</div>
+
+## 📝 Code Style Guide
+
+<div align="center">
+
+We follow these coding standards:
+
+```python
+# Python: PEP 8
+def calculate_interest(principal: float, rate: float, time: int) -> float:
+    """
+    Calculate simple interest.
+
+    Args:
+        principal (float): Principal amount
+        rate (float): Interest rate (decimal)
+        time (int): Time period in years
+
+    Returns:
+        float: Calculated interest amount
+    """
+    return principal * rate * time
+```
+
+```javascript
+// JavaScript: ESLint + Prettier
+const formatCurrency = (amount, currency = 'USD') => {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: currency
+  }).format(amount);
+};
+```
+
+</div>
+
+## 🧪 Testing
+
+<div align="center">
+
+```bash
+# Run Python tests
+python -m pytest
+
+# Run JavaScript tests
+npm test
+
+# Run e2e tests
+npm run test:e2e
+```
+
+### Test Coverage Goals
+- Backend: > 90%
+- Frontend: > 85%
+- E2E: Key user journeys
+
+</div>
+
+## 📦 Deployment
+
+<div align="center">
+
+```bash
+# Build for production
+npm run build
+
+# Deploy using Docker
+docker-compose up -d
+
+# Monitor logs
+docker-compose logs -f
+```
+
+### Supported Platforms
+- ☁️ AWS
+- 🌩️ Google Cloud
+- 💻 Self-hosted
+- 🐳 Docker
+
+</div>
