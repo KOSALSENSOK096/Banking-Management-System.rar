@@ -1,5 +1,33 @@
 # Banking Management System 🏦
 
+<div align="center">
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<br />
+
+<img src="assets/logo.png" alt="Logo" width="200" height="200"/>
+
+<h3 align="center">Banking Management System</h3>
+<p align="center">
+    A modern, secure, and user-friendly banking management solution
+    <br />
+    <a href="#documentation"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="#demo">View Demo</a>
+    ·
+    <a href="https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues">Request Feature</a>
+</p>
+</div>
+
 ![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)
 ![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -12,35 +40,28 @@ A modern, feature-rich banking management system built with Python and CustomTki
   <img src="screenshots/main.png" alt="Banking Management System" width="600"/>
 </div>
 
-## ✨ Key Features
+## 🎯 Key Features
 
-- 🔐 **Secure Account Management**
-  - Customer registration with detailed information
-  - Account creation and management
-  - Secure password handling
-
-- 💰 **Transaction Operations**
-  - Deposit funds
-  - Withdraw money
-  - Transfer between accounts
-  - Transaction history tracking
-
-- 🎨 **Modern User Interface**
-  - Beautiful dark theme
-  - Responsive design
-  - Intuitive navigation
-  - User-friendly forms
-
-- 📊 **Data Management**
-  - JSON-based data persistence
-  - Efficient data retrieval
-  - Backup functionality
-
-- ⚡ **Advanced Features**
-  - Real-time input validation
-  - Comprehensive error handling
-  - Session management
-  - Detailed logging
+<table>
+<tr>
+    <td align="center">
+        <img src="assets/security.png" width="64" height="64"/>
+        <br />Security
+    </td>
+    <td align="center">
+        <img src="assets/transactions.png" width="64" height="64"/>
+        <br />Transactions
+    </td>
+    <td align="center">
+        <img src="assets/ui.png" width="64" height="64"/>
+        <br />Modern UI
+    </td>
+    <td align="center">
+        <img src="assets/database.png" width="64" height="64"/>
+        <br />Data Management
+    </td>
+</tr>
+</table>
 
 ## 🚀 Getting Started
 
@@ -199,3 +220,41 @@ If you find this project helpful, please consider giving it a star!
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=3DABF5&center=true&vCenter=true&width=435&lines=Thanks+for+visiting!;Star+this+repository;Create+amazing+projects!)](https://git.io/typing-svg)
 
 </div>
+
+## 📸 Screenshots
+
+<div align="center">
+<table>
+<tr>
+    <td><img src="screenshots/login.png" alt="Login Screen"/></td>
+    <td><img src="screenshots/dashboard.png" alt="Dashboard"/></td>
+</tr>
+<tr>
+    <td><img src="screenshots/transactions.png" alt="Transactions"/></td>
+    <td><img src="screenshots/profile.png" alt="Profile"/></td>
+</tr>
+</table>
+</div>
+
+## 📊 Project Status
+
+<div align="center">
+
+![Activity](https://img.shields.io/github/commit-activity/m/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/KOSALSENSOK096/Banking-Management-System.rar?style=for-the-badge)
+![Development Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+
+</div>
+
+[contributors-shield]: https://img.shields.io/github/contributors/KOSALSENSOK096/Banking-Management-System.rar.svg?style=for-the-badge
+[contributors-url]: https://github.com/KOSALSENSOK096/Banking-Management-System.rar/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/KOSALSENSOK096/Banking-Management-System.rar.svg?style=for-the-badge
+[forks-url]: https://github.com/KOSALSENSOK096/Banking-Management-System.rar/network/members
+[stars-shield]: https://img.shields.io/github/stars/KOSALSENSOK096/Banking-Management-System.rar.svg?style=for-the-badge
+[stars-url]: https://github.com/KOSALSENSOK096/Banking-Management-System.rar/stargazers
+[issues-shield]: https://img.shields.io/github/issues/KOSALSENSOK096/Banking-Management-System.rar.svg?style=for-the-badge
+[issues-url]: https://github.com/KOSALSENSOK096/Banking-Management-System.rar/issues
+[license-shield]: https://img.shields.io/github/license/KOSALSENSOK096/Banking-Management-System.rar.svg?style=for-the-badge
+[license-url]: https://github.com/KOSALSENSOK096/Banking-Management-System.rar/blob/master/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/your-username
