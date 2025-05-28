@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="60" cy="60" r="58" fill="#2c3347" stroke="#f4a7ba" stroke-width="4"/>
+
+    <!-- Bank Building -->
+    <g transform="translate(30, 35)">
+        <!-- Roof -->
+        <path d="M30 0L60 20H0L30 0Z" fill="#f4a7ba"/>
+
+        <!-- Building -->
+        <rect x="5" y="20" width="50" height="40" fill="#f4a7ba"/>
+
+        <!-- Columns -->
+        <rect x="10" y="20" width="5" height="40" fill="#2c3347"/>
+        <rect x="25" y="20" width="5" height="40" fill="#2c3347"/>
+        <rect x="40" y="20" width="5" height="40" fill="#2c3347"/>
+
+        <!-- Steps -->
+        <rect x="0" y="60" width="60" height="5" fill="#f4a7ba"/>
+        <rect x="5" y="65" width="50" height="5" fill="#f4a7ba"/>
+    </g>
+</svg>

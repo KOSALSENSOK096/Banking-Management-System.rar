@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System - Account Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1f2e;
+            color: #e1e6f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #2c3347;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #f4a7ba;
+        }
+
+        .tabs {
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            background-color: #3a4257;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            background-color: #f4a7ba;
+            color: #2c3347;
+        }
+
+        .form-container {
+            background-color: #2c3347;
+            padding: 20px;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1px 1fr;
+            gap: 20px;
+        }
+
+        .divider {
+            background-color: #3a4257;
+            width: 1px;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .section h2 {
+            color: #f4a7ba;
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #3a4257;
+            background-color: #1a1f2e;
+            color: #e1e6f0;
+            border-radius: 4px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .button {
+            background-color: #f4a7ba;
+            color: #2c3347;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #e897aa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Bank Management System</h1>
+    </div>
+    <div class="tabs">
+        <button class="tab active">Account Registration</button>
+        <button class="tab">Account Management</button>
+    </div>
+    <div class="form-container">
+        <div class="section">
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label>Date of Birth:</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>National ID:</label>
+                <input type="text" placeholder="Enter your national ID">
+            </div>
+            <div class="form-group">
+                <label>Phone Number:</label>
+                <input type="tel" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h2>Address Information</h2>
+            <div class="form-group">
+                <label>Address:</label>
+                <input type="text" placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <label>City:</label>
+                <input type="text" placeholder="Enter your city">
+            </div>
+            <div class="form-group">
+                <label>State:</label>
+                <input type="text" placeholder="Enter your state">
+            </div>
+            <div class="form-group">
+                <label>Postal Code:</label>
+                <input type="text" placeholder="Enter postal code">
+            </div>
+            <div class="form-group">
+                <label>Country:</label>
+                <select>
+                    <option value="">Select country</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-container" style="margin-top: 20px;">
+        <div class="section" style="grid-column: 1 / -1;">
+            <h2>Account Information</h2>
+            <div class="form-group">
+                <label>Account Type:</label>
+                <select>
+                    <option value="">Select account type</option>
+                    <option value="savings">Savings Account</option>
+                    <option value="checking">Checking Account</option>
+                    <option value="business">Business Account</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Initial Deposit:</label>
+                <input type="number" placeholder="Enter initial deposit amount">
+            </div>
+            <div class="form-group">
+                <label>Currency:</label>
+                <select>
+                    <option value="">Select currency</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                </select>
+            </div>
+            <button class="button">Create Account</button>
+        </div>
+    </div>
+</body>
+
+</html>

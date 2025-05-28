@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1f2e;
+            color: #e1e6f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(45deg, #1a1f2e 25%, #2c3347 25%, #2c3347 50%, #1a1f2e 50%, #1a1f2e 75%, #2c3347 75%, #2c3347 100%);
+            background-size: 56.57px 56.57px;
+        }
+
+        .login-container {
+            background-color: #2c3347;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #f4a7ba;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #e1e6f0;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #3a4257;
+            background-color: #1a1f2e;
+            color: #e1e6f0;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            border-color: #f4a7ba;
+            outline: none;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .remember-me input {
+            margin-right: 8px;
+        }
+
+        .login-button {
+            background-color: #f4a7ba;
+            color: #2c3347;
+            border: none;
+            padding: 12px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #e897aa;
+        }
+
+        .forgot-password {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .forgot-password a {
+            color: #f4a7ba;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .register-link {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            color: #f4a7ba;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <img src="bank-logo.png" alt="Bank Logo" class="logo">
+        <h1>Welcome Back</h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" placeholder="Enter your username or email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <button type="submit" class="login-button">Log In</button>
+            <div class="forgot-password">
+                <a href="#">Forgot your password?</a>
+            </div>
+            <div class="register-link">
+                Don't have an account? <a href="#">Register Now</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
