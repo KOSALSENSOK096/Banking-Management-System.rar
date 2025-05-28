@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#3498db"/>
+
+    <!-- Bank Building Icon -->
+    <path d="M100 40 L160 80 L40 80 Z" fill="#ffffff"/>
+    <rect x="50" y="80" width="100" height="70" fill="#ffffff"/>
+
+    <!-- Pillars -->
+    <rect x="60" y="85" width="15" height="65" fill="#3498db"/>
+    <rect x="92.5" y="85" width="15" height="65" fill="#3498db"/>
+    <rect x="125" y="85" width="15" height="65" fill="#3498db"/>
+
+    <!-- Base -->
+    <rect x="40" y="150" width="120" height="10" fill="#ffffff"/>
+</svg>
