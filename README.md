@@ -186,6 +186,211 @@ graph LR
 
 </div>
 
+## 🏗️ Project Architecture
+
+<div align="center">
+
+```mermaid
+flowchart TD
+    subgraph Frontend
+        UI[React UI] --> Redux[Redux Store]
+        Redux --> API[API Client]
+    end
+
+    subgraph Backend
+        API --> FastAPI[FastAPI Server]
+        FastAPI --> Services[Business Logic]
+        Services --> DB[Database Layer]
+    end
+
+    subgraph Database
+        DB --> MySQL[MySQL]
+        DB --> Redis[Redis Cache]
+    end
+
+    subgraph Security
+        Auth[Authentication] --> JWT[JWT Token]
+        JWT --> Roles[Role Based Access]
+    end
+```
+
+### System Components
+
+| Layer | Technologies | Purpose |
+|-------|-------------|----------|
+| Frontend | React, Redux, TypeScript | User Interface & State Management |
+| Backend | FastAPI, Python, SQLAlchemy | Business Logic & API Endpoints |
+| Database | MySQL, Redis | Data Storage & Caching |
+| Security | JWT, OAuth2, Argon2 | Authentication & Authorization |
+
+</div>
+
+## 💻 Implementation Details
+
+<div align="center">
+
+### Backend Structure
+
+```
+backend/
+├── app/
+│   ├── api/
+│   │   ├── v1/
+│   │   │   ├── auth.py
+│   │   │   ├── users.py
+│   │   │   ├── accounts.py
+│   │   │   └── transactions.py
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── security.py
+│   │   └── database.py
+│   ├── models/
+│   │   ├── user.py
+│   │   ├── account.py
+│   │   └── transaction.py
+│   └── services/
+│       ├── auth.py
+│       ├── banking.py
+│       └── notifications.py
+```
+
+### Frontend Structure
+
+```
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   ├── auth/
+│   │   └── banking/
+│   ├── pages/
+│   │   ├── dashboard/
+│   │   ├── accounts/
+│   │   └── transactions/
+│   ├── store/
+│   │   ├── actions/
+│   │   └── reducers/
+│   └── services/
+│       ├── api.ts
+│       └── auth.ts
+```
+
+</div>
+
+## 📚 API Documentation
+
+<div align="center">
+
+### Authentication Endpoints
+
+```typescript
+// User Authentication
+POST /api/v1/auth/login
+POST /api/v1/auth/register
+POST /api/v1/auth/refresh-token
+POST /api/v1/auth/logout
+
+// Response Example
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIs...",
+    "token_type": "bearer",
+    "expires_in": 3600,
+    "user": {
+        "id": "uuid",
+        "username": "user@example.com",
+        "role": "user"
+    }
+}
+```
+
+### Banking Operations
+
+```typescript
+// Account Management
+GET    /api/v1/accounts
+POST   /api/v1/accounts
+GET    /api/v1/accounts/{id}
+DELETE /api/v1/accounts/{id}
+
+// Transactions
+POST   /api/v1/transactions/transfer
+GET    /api/v1/transactions/history
+GET    /api/v1/transactions/{id}
+
+// Response Example
+{
+    "transaction_id": "uuid",
+    "amount": 1000.00,
+    "currency": "USD",
+    "status": "completed",
+    "timestamp": "2024-01-20T15:30:00Z"
+}
+```
+
+</div>
+
+## 🔧 Configuration Guide
+
+<div align="center">
+
+### Environment Variables
+
+```bash
+# Server Configuration
+SERVER_HOST=0.0.0.0
+SERVER_PORT=8000
+DEBUG_MODE=False
+
+# Database Configuration
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=banking_system
+DB_USER=admin
+DB_PASSWORD=secure_password
+
+# Security
+JWT_SECRET_KEY=your-secret-key
+JWT_ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# Redis Cache
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_DB=0
+```
+
+### Database Schema
+
+```mermaid
+erDiagram
+    USERS ||--o{ ACCOUNTS : has
+    ACCOUNTS ||--o{ TRANSACTIONS : involves
+    USERS {
+        uuid id
+        string email
+        string password_hash
+        string role
+        datetime created_at
+    }
+    ACCOUNTS {
+        uuid id
+        uuid user_id
+        decimal balance
+        string currency
+        string status
+    }
+    TRANSACTIONS {
+        uuid id
+        uuid from_account
+        uuid to_account
+        decimal amount
+        string currency
+        datetime timestamp
+    }
+```
+
+</div>
+
 ## 🎥 Live Demo & Screenshots
 
 <div align="center">
