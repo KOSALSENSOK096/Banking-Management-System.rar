@@ -6,38 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Management System</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body class="bg-gray-100">
-    <div class="min-h-screen flex items-center justify-center">
-        <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-xl shadow-lg">
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen">
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div
+            class="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-2xl transform hover:scale-[1.01] transition-all duration-300">
             <div class="text-center">
-                <img src="/assets/bank-logo.svg" alt="Bank Logo" class="mx-auto h-24 w-24">
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Banking System</h2>
-                <p class="mt-2 text-sm text-gray-600">Modern and Secure Banking Solution</p>
+                <img src="/assets/bank-logo.svg" alt="Bank Logo" class="mx-auto h-24 w-24 animate-pulse">
+                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Welcome Back</h2>
+                <p class="mt-2 text-sm text-gray-600">Sign in to your account</p>
             </div>
             <form class="mt-8 space-y-6" id="loginForm">
                 <div class="rounded-md shadow-sm -space-y-px">
-                    <div>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                            <i class="fas fa-user"></i>
+                        </span>
                         <input id="username" name="username" type="text" required
-                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                            class="appearance-none rounded-t-md relative block w-full px-3 py-2 pl-10 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                             placeholder="Username">
                     </div>
-                    <div>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                            <i class="fas fa-lock"></i>
+                        </span>
                         <input id="password" name="password" type="password" required
-                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                            class="appearance-none rounded-b-md relative block w-full px-3 py-2 pl-10 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                             placeholder="Password">
                     </div>
                 </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input id="remember-me" name="remember-me" type="checkbox"
+                            class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+                            Remember me
+                        </label>
+                    </div>
+
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                            Forgot your password?
+                        </a>
+                    </div>
+                </div>
+
                 <div>
                     <button type="submit"
-                        class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transform hover:scale-[1.02] transition-all duration-200">
+                        <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                            <i class="fas fa-sign-in-alt text-indigo-500 group-hover:text-indigo-400"></i>
+                        </span>
                         Sign in
                     </button>
                 </div>
+
+                <div class="text-center">
+                    <p class="text-sm text-gray-600">
+                        Don't have an account?
+                        <a href="/register.html" class="font-medium text-indigo-600 hover:text-indigo-500">
+                            Register now
+                        </a>
+                    </p>
+                </div>
             </form>
+
+            <!-- Features Section -->
+            <div class="mt-8 pt-8 border-t border-gray-200">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center">
+                        <div
+                            class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 mb-3">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <h3 class="text-sm font-medium text-gray-900">Secure Banking</h3>
+                        <p class="mt-1 text-xs text-gray-500">Bank with confidence using our secure platform</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 mb-3">
+                            <i class="fas fa-clock text-xl"></i>
+                        </div>
+                        <h3 class="text-sm font-medium text-gray-900">24/7 Access</h3>
+                        <p class="mt-1 text-xs text-gray-500">Access your account anytime, anywhere</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="fixed bottom-0 w-full bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto py-4 px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="ml-2 text-sm">Security</span>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="ml-2 text-sm">Help</span>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fas fa-phone"></i>
+                        <span class="ml-2 text-sm">Contact</span>
+                    </a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="/js/app.js"></script>
 </body>
 
