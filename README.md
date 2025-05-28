@@ -127,19 +127,49 @@ mindmap
 
 ## 🚀 Quick Start
 
-\`\`\`bash
+<div align="center">
+<img src="assets/bank-logo.png" width="150" height="150" alt="Banking System Logo"/>
+</div>
+
+### 📥 Installation Steps
+
+```bash
 # Clone the repository
 git clone https://github.com/KOSALSENSOK096/Banking-Management-System.rar.git
 
 # Navigate to project directory
 cd Banking-Management-System
 
+# Create and activate virtual environment (Windows)
+python -m venv venv
+.\venv\Scripts\activate
+
+# Create and activate virtual environment (Linux/Mac)
+python -m venv venv
+source venv/bin/activate
+
 # Install dependencies
 pip install -r requirements.txt
 
 # Run the application
 python bank_management_system.py
-\`\`\`
+```
+
+### 🔧 System Requirements
+
+<table>
+<tr>
+    <td align="center">
+        <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white"/>
+    </td>
+    <td align="center">
+        <img src="https://img.shields.io/badge/SQLite-3.x-blue?style=for-the-badge&logo=sqlite&logoColor=white"/>
+    </td>
+    <td align="center">
+        <img src="https://img.shields.io/badge/RAM-4GB+-green?style=for-the-badge&logo=memory&logoColor=white"/>
+    </td>
+</tr>
+</table>
 
 ## 📸 Interface Preview
 
